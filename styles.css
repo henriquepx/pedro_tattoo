@@ -93,11 +93,39 @@ nav ul li a {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .gallerysize .tattoos figure {
     overflow: hidden;
     aspect-ratio: 1;
     max-width: 320px;
+}
+@media (max-width: 980px) {
+    .gallerysize .tattoos figure {
+        max-width: 460px;
+    }
+}
+@media (max-width: 930px) {
+    .gallerysize .tattoos figure {
+        max-width: 390px;
+    }
+}
+@media (max-width: 785px) {
+    .gallerysize .tattoos figure {
+        max-width: 340px;
+    }
+}
+@media (max-width: 690px) {
+    .gallerysize .tattoos figure {
+        max-width: 300px;
+    }
+}
+@media (max-width: 600px) {
+    .gallerysize .tattoos figure {
+        max-width: 100%;
+        padding: 1rem;
+    }
 }
 .gallerysize .tattoos figure img {
     width: 100%;
@@ -111,6 +139,35 @@ nav ul li a {
     -webkit-transform: scale(1.3);
 	transform: scale(1.3);
 }
+
+.about {
+    background-color: #e0d1d1;
+    padding: 4rem 0rem;
+}
+.sizeabout {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    gap: 30px;
+}
+.sizeabout img {
+    max-width: 400px;
+}
+.sizeabout h1 {
+    font-size: 2rem;
+    font-family: var(--font);
+    color: var(--color-marrom-1);
+    font-weight: 700;
+}
+.sizeabout p {
+    max-width: 100ch;
+    margin: 10px 0;
+}
+
+
+
 
 .rating {
     background-color: #e4e4e4;
@@ -357,6 +414,18 @@ footer {
       }
 
 
+    .sizeabout {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sizeabout img {
+        max-width: 100%;
+    }
+    .sizeabout h1, .sizeabout p {
+        text-align: center;
+        padding: 0rem 1rem;
+    }
     .footersize {
         flex-direction: column;
     }
