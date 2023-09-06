@@ -1,11 +1,13 @@
 :root {
     --color-bege: #F5F5DC;
+    --color-white-less: #fdf5f5;
     --color-bege-claro: #f3e9dc;
     --color-marrom-1: #895737;
     --color-marrom-2: #5e3023;
     --color-marrom-1e5: #c08552;
     --font: 'Montserrat', sans-serif;
     --font-two: 'Cormorant Garamond', serif;
+    --font-arapey: 'Arapey', serif;
 }
 
 * {
@@ -24,15 +26,21 @@
 header {
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-bege-claro);
+    background-color: var(--color-white-less);
     padding: 1.5rem
 }
-nav {
-    display: flex;
+header h1 {
+    font-family: var(--font);
+    font-weight: 600;
 }
 nav ul {
     display: flex;
     gap: 15px;
+}
+nav ul li a {
+    font-family: var(--font);
+    color: var(--color-marrom-2);
+    font-weight: 600;
 }
 
 
@@ -52,7 +60,14 @@ nav ul {
 .gallerysize h1 {
     text-align: center;
     font-size: 4rem;
-    font-family: var(--font-two);
+    font-family: var(--font-arapey);
+    color: var(--color-marrom-1);
+    font-weight: 500;
+}
+.gallerysize p {
+    text-align: center;
+    font-size: 1rem;
+    font-family: var(--font);
     color: var(--color-marrom-1);
     font-weight: 600;
     margin-bottom: 2rem;
@@ -104,7 +119,7 @@ nav ul {
 .doubtssize .faqtitle h1 {
     text-align: center;
     font-size: 8rem;
-    font-family: var(--font);
+    font-family: var(--font-arapey);
     font-weight: 600;
     background: linear-gradient(to bottom, #c08552, #F5F5DC);
     -webkit-background-clip: text;
@@ -158,4 +173,57 @@ nav ul {
     font-weight: 450;
     color: #000;
     margin-top: .6rem;
+}
+
+
+
+
+
+footer {
+    background-color: var(--color-white-less);
+}
+.footersize {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+
+    padding: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+.footernav .footerul {
+    display: flex;
+    flex-direction: column;
+}
+.socialmedias {
+    margin-right: 5rem;
+}
+.socialmedias a {
+    display: flex;
+    gap: 10px;
+    color: var(--color-marrom-2);
+    font-family: var(--font);
+}
+.footercop h1 {
+    color: var(--color-marrom-2);
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 1.0rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive 678px */
+@media (max-width: 678px) {
+    .footersize {
+        flex-direction: column;
+    }
 }
