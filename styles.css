@@ -1,0 +1,161 @@
+:root {
+    --color-bege: #F5F5DC;
+    --color-bege-claro: #f3e9dc;
+    --color-marrom-1: #895737;
+    --color-marrom-2: #5e3023;
+    --color-marrom-1e5: #c08552;
+    --font: 'Montserrat', sans-serif;
+    --font-two: 'Cormorant Garamond', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font: inherit;
+    scroll-behavior: smooth;
+    vertical-align: baseline;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-bege-claro);
+    padding: 1.5rem
+}
+nav {
+    display: flex;
+}
+nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gallerysize {
+    max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+
+    margin: 5rem 0rem;
+}
+.gallerysize h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-family: var(--font-two);
+    color: var(--color-marrom-1);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.gallerysize .tattoos {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.gallerysize .tattoos figure {
+    overflow: hidden;
+    aspect-ratio: 1;
+    max-width: 320px;
+}
+.gallerysize .tattoos figure img {
+    width: 100%;
+    cursor: pointer;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.gallerysize figure:hover img {
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.doubtssize {
+    max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+
+    padding: 7rem 0rem;
+}
+.doubtssize .faqtitle {
+    position: relative;
+}
+.doubtssize .faqtitle h1 {
+    text-align: center;
+    font-size: 8rem;
+    font-family: var(--font);
+    font-weight: 600;
+    background: linear-gradient(to bottom, #c08552, #F5F5DC);
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 60%;
+}
+.doubtssize .faqtitle p {
+    position: absolute;
+    left: 30%;
+    top: 33%;
+
+    font-size: 3rem;
+    font-family: var(--font-two);
+    color: var(--color-marrom-2);
+}
+.cardsdoubts {
+    margin-top: 1rem;
+}
+.cardquestion {
+    &:nth-child(-n + 3) {
+        border-bottom: 2px solid #e9e8e8;
+    }
+}
+.question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.2rem;
+    cursor: pointer;
+}
+.question:hover {
+    background-color: #f6f6f6;
+}
+.question:hover h2 {
+    text-decoration: underline;
+}
+.cardquestion .question h2 {
+    font-size: 1.2rem;
+    font-family: var(--font);
+    font-weight: 550;
+}
+.cardquestion .answer {
+    display: none;
+    padding: 1.4rem 0rem 2rem 2.2rem;
+}
+.cardquestion .answer.active {
+    display: block;
+}
+.cardquestion .answer p {
+    font-family: var(--font);
+    font-weight: 450;
+    color: #000;
+    margin-top: .6rem;
+}
