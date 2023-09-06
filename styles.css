@@ -23,6 +23,10 @@
     text-decoration: none;
 }
 
+/* HEADER */
+/* HEADER */
+/* HEADER */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -46,6 +50,7 @@ nav ul li a {
     color: var(--color-marrom-2);
     font-weight: 600;
 }
+
 .hamburger {
     cursor: pointer;
     display: none;
@@ -60,12 +65,41 @@ nav ul li a {
     background-color: black;
 }
 
+/* MAIN */
+/* MAIN */
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 80vh;
+    background-color: var(--color-marrom-1);
+}
+
+main h1 {
+    font-family: var(--font);
+    color: var(--color-white-less);
+    font-size: 3rem;
+}
+main h2 {
+    font-family: var(--font);
+    color: var(--color-white-less);
+    font-size: 1.2rem;
+}
+
+/* GALLERY */
+/* GALLERY */
+/* GALLERY */
+
 .gallery {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #e4e4e4;
+    background-color: var(--color-white-less);
 }
 .gallerysize {
     max-width: 1000px;
@@ -93,6 +127,25 @@ nav ul li a {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.figureinsta {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-marrom-2);
+    justify-content: center;
+    align-items: center;
+}
+.figureinsta .img a {
+    color: white;
+    font-family: var(--font);
+}
+.gallerysize .tattoos figure .img {
+    width: 320px;
+
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -140,8 +193,12 @@ nav ul li a {
 	transform: scale(1.3);
 }
 
+/* ABOUT */
+/* ABOUT */
+/* ABOUT */
+
 .about {
-    background-color: #e0d1d1;
+    background-color: var(--color-white-less);
     padding: 4rem 0rem;
 }
 .sizeabout {
@@ -166,11 +223,12 @@ nav ul li a {
     margin: 10px 0;
 }
 
-
-
+/* RATING */
+/* RATING */
+/* RATING */
 
 .rating {
-    background-color: #e4e4e4;
+    background-color: var(--color-white-less);
 }
 .ratingsize {
     max-width: 800px;
@@ -237,8 +295,12 @@ nav ul li a {
     }
 }
 
+/* DOUBTS */
+/* DOUBTS */
+/* DOUBTS */
+
 .doubts {
-    background-color: #fdfcfc;
+    background-color: var(--color-white-less);
 }
 .doubtssize {
     max-width: 1000px;
@@ -310,7 +372,7 @@ nav ul li a {
 }
 
 .orcament {
-    background-color: #fdfcfc;
+    background-color: var(--color-white-less);
     padding: 1rem 0rem;
 }
 .sizeorcament {
@@ -332,8 +394,12 @@ nav ul li a {
     color: #ffffff;
 }
 
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+
 footer {
-    background-color: var(--color-white-less);
+    background-color: var(--color-marrom-2);
 }
 .footersize {
     max-width: 1000px;
@@ -355,17 +421,29 @@ footer {
 .socialmedias a {
     display: flex;
     gap: 10px;
-    color: var(--color-marrom-2);
+    color: var(--color-bege-claro);
     font-family: var(--font);
 }
 .footercop h1 {
-    color: var(--color-marrom-2);
+    color: var(--color-bege-claro);
     font-family: var(--font);
     font-weight: 700;
     font-size: 1.0rem;
 }
+.cop {
+    font-family: var(--font);
+    text-align: center;
+    background-color: #f3e9dc;
+    padding: .5rem 0rem;
+    color: #000000;
+    font-weight: 600;
+    font-size: .8rem;
+}
 
-/* Responsive 678px */
+/* RESPONSIVE 678px */
+/* RESPONSIVE 678px */
+/* RESPONSIVE 678px */
+
 @media (max-width: 678px) {
     header {
         padding: 1.5rem 2rem;
