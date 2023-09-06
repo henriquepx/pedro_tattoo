@@ -27,28 +27,45 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: var(--color-white-less);
-    padding: 1.5rem
+    padding: 1.5rem 10rem;
 }
 header h1 {
     font-family: var(--font);
     font-weight: 600;
 }
+nav {
+    display: flex;
+    align-items: center;
+}
 nav ul {
     display: flex;
-    gap: 15px;
+    gap: 25px;
 }
 nav ul li a {
     font-family: var(--font);
     color: var(--color-marrom-2);
     font-weight: 600;
 }
-
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3 ease-in-out;
+    transition: all 0.3 ease-in-out;
+    background-color: black;
+}
 
 .gallery {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #e4e4e4;
 }
 .gallerysize {
     max-width: 1000px;
@@ -95,23 +112,83 @@ nav ul li a {
 	transform: scale(1.3);
 }
 
+.rating {
+    background-color: #e4e4e4;
+}
+.ratingsize {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
 
+    padding: 10rem 0;
+}
+.ratingsize h1 {
+    font-size: 1.2rem;
+    font-family: var(--font);
+    font-weight: 550;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.indicadores {
+    display: flex;
+    justify-content: center;
+}
+.jstabmenu {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin: 10px;
+    cursor: pointer;
+    display: block;
+    background-color: #0c0c0c;
+}
+.tabcontent {
+    display: none;
+    padding: 3rem 0rem;
+}
+.tabcontent.ativo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: animationText .6s forwards;
+}
+.textdepoiment {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 0rem;
+    padding: 0rem 1.5rem;
+}
+.textdepoiment h2 {
+    margin-top: 15px;
+    font-family: var(--font);
+    font-size: 1rem;
+    font-style: italic;
+}
+.textdepoiment p {
+    font-family: var(--font-arapey);
+}
+  
+@keyframes animationText {
+    from {
+        transform: translate3d(-30px, 0, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
 
-
-
-
-
-
-
-
-
-
+.doubts {
+    background-color: #fdfcfc;
+}
 .doubtssize {
     max-width: 1000px;
 	width: 100%;
 	margin: 0 auto;
 
-    padding: 7rem 0rem;
+    padding: 7rem 0rem 2rem 0rem;
 }
 .doubtssize .faqtitle {
     position: relative;
@@ -175,9 +252,28 @@ nav ul li a {
     margin-top: .6rem;
 }
 
-
-
-
+.orcament {
+    background-color: #fdfcfc;
+    padding: 1rem 0rem;
+}
+.sizeorcament {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.sizeorcament h1 {
+    font-size: 1.2rem;
+    font-family: var(--font);
+    font-weight: 550;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.sizeorcament .doubtsbutton {
+    padding: 1.5rem 2rem;
+    background-color: var(--color-marrom-2);
+    font-family: var(--font);
+    color: #ffffff;
+}
 
 footer {
     background-color: var(--color-white-less);
@@ -212,17 +308,55 @@ footer {
     font-size: 1.0rem;
 }
 
-
-
-
-
-
-
-
-
-
 /* Responsive 678px */
 @media (max-width: 678px) {
+    header {
+        padding: 1.5rem 2rem;
+    }
+    .menu {
+        position: fixed;
+        z-index: 777;
+        left: -100%;
+        top: 0px;
+        gap: 0;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--color-marrom-2);
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .item {
+        margin: 25px 0;
+    }
+    .link {
+        color: white;
+      }
+      .menu.active {
+        left: 0;
+      }
+      .hamburger {
+        display: block;
+        z-index: 777;
+      }
+      .hamburger.active {
+        position: fixed;
+        right: 15px;
+      }
+      .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+      }
+      .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        background-color: white;
+      }
+      .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: white;
+      }
+
+
     .footersize {
         flex-direction: column;
     }

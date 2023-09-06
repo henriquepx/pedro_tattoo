@@ -13,18 +13,30 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <body>
-    <header>
-        <h1>Pedro Rodrigues</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Galeria</a></li>
-                <li><a href="#">Orçamentos</a></li>
-                <li><a href="#">Depoimentos</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>  
+    <h1 href="#" class="logo">Pedro Rodrigues</h1>
+    <nav class="navbar">
+      <ul class="menu">
+        <li class="item">
+          <a href="#" class="link">Home</a>
+        </li>
+        <li class="item">
+          <a href="#" class="link">About</a>
+        </li>
+        <li class="item">
+          <a href="#" class="link">Projects</a>
+        </li>
+        <li class="item">
+          <a href="#" class="link">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
 
     <section class="gallery">
         <div class="gallerysize">
@@ -41,14 +53,73 @@
         </div>
     </section>
 
+      <section class="rating">
+        <div class="ratingsize">
+            <h1>Depoimentos</h1>
+            <div>
+                <div class="tabcontent ativo">
+                  <i class="fa-3x fa-solid fa-quote-left"></i>
+                  <div class="textdepoiment">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium excepturi ullam, in nesciunt fuga distinctio quos esse architecto vitae! Pariatur in nam numquam voluptate incidunt eius soluta corrupti est illo harum assumenda inventore quis consequuntur magnam atque, temporibus eveniet ex!</p>
+                    <h2>Henrique Pinheiro, RJ</h2>
+                  </div>
+                </div>
+                <div class="tabcontent">
+                  <i class="fa-3x fa-solid fa-quote-left"></i>
+                  <div class="textdepoiment">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium excepturi ullam, in nesciunt fuga distinctio quos esse architecto vitae! Pariatur in nam numquam voluptate incidunt eius soluta corrupti est illo harum assumenda inventore quis consequuntur magnam atque, temporibus eveniet ex!</p>
+                    <h2>Bruna, RJ</h2>
+                  </div>
+                </div>
+                <div class="tabcontent">
+                  <i class="fa-3x fa-solid fa-quote-left"></i>
+                  <div class="textdepoiment">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium excepturi ullam, in nesciunt fuga distinctio quos esse architecto vitae! Pariatur in nam numquam voluptate incidunt eius soluta corrupti est illo harum assumenda inventore quis consequuntur magnam atque, temporibus eveniet ex!</p>
+                    <h2>Valquíria, RJ</h2>
+                  </div>
+                </div>
+                <div class="tabcontent">
+                  <i class="fa-3x fa-solid fa-quote-left"></i>
+                  <div class="textdepoiment">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium excepturi ullam, in nesciunt fuga distinctio quos esse architecto vitae! Pariatur in nam numquam voluptate incidunt eius soluta corrupti est illo harum assumenda inventore quis consequuntur magnam atque, temporibus eveniet ex!</p>
+                    <h2>Diogo, RJ</h2>
+                  </div>
+                </div>
+                <div class="tabcontent">
+                  <i class="fa-3x fa-solid fa-quote-left"></i>
+                  <div class="textdepoiment">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium excepturi ullam, in nesciunt fuga distinctio quos esse architecto vitae! Pariatur in nam numquam voluptate incidunt eius soluta corrupti est illo harum assumenda inventore quis consequuntur magnam atque, temporibus eveniet ex!</p>
+                    <h2>Neymar, RJ</h2>
+                  </div>
+                </div>
+            </div>
+            <div class="indicadores">
+              <span class="jstabmenu"></span>
+              <span class="jstabmenu"></span>
+              <span class="jstabmenu"></span>
+              <span class="jstabmenu"></span>
+              <span class="jstabmenu"></span>
+            </div>
+        </div>
+    </section>
+
     <section class="doubts">
-        <div class="doubtssize">
-          <div class="faqtitle">
-            <h1>FAQ</h1>
-            <p>Perguntas Frequentes</p>
+      <div class="doubtssize">
+        <div class="faqtitle">
+          <h1>FAQ</h1>
+          <p>Perguntas Frequentes</p>
+        </div>
+        <div class="cardsdoubts">
+          <div class="cardquestion">
+            <div class="question">
+              <h2>Lorem ipsum dolor sit amet.</h2>
+              <i class="fa-solid fa-chevron-down fa-lg" style="color: #000000;"></i>
+            </div>
+            <div class="answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ipsam quibusdam tenetur in ad natus fugiat non aliquam sed fugit!</p>
+            </div>
           </div>
-          <div class="cardsdoubts">
-            <div class="cardquestion">
+          <div class="cardquestion">
               <div class="question">
                 <h2>Lorem ipsum dolor sit amet.</h2>
                 <i class="fa-solid fa-chevron-down fa-lg" style="color: #000000;"></i>
@@ -56,43 +127,35 @@
               <div class="answer">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ipsam quibusdam tenetur in ad natus fugiat non aliquam sed fugit!</p>
               </div>
-            </div>
-            <div class="cardquestion">
-                <div class="question">
-                  <h2>Lorem ipsum dolor sit amet.</h2>
-                  <i class="fa-solid fa-chevron-down fa-lg" style="color: #000000;"></i>
-                </div>
-                <div class="answer">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ipsam quibusdam tenetur in ad natus fugiat non aliquam sed fugit!</p>
-                </div>
-            </div>
-            <div class="cardquestion">
-                <div class="question">
-                  <h2>Lorem ipsum dolor sit amet.</h2>
-                  <i class="fa-solid fa-chevron-down fa-lg" style="color: #000000;"></i>
-                </div>
-                <div class="answer">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ipsam quibusdam tenetur in ad natus fugiat non aliquam sed fugit!</p>
-                </div>
-            </div>
-            <div class="cardquestion">
-                <div class="question">
-                  <h2>Lorem ipsum dolor sit amet.</h2>
-                  <i class="fa-solid fa-chevron-down fa-lg" style="color: #000000;"></i>
-                </div>
-                <div class="answer">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ipsam quibusdam tenetur in ad natus fugiat non aliquam sed fugit!</p>
-                </div>
-            </div>
+          </div>
+          <div class="cardquestion">
+              <div class="question">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <i class="fa-solid fa-chevron-down fa-lg" style="color: #000000;"></i>
+              </div>
+              <div class="answer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ipsam quibusdam tenetur in ad natus fugiat non aliquam sed fugit!</p>
+              </div>
+          </div>
+          <div class="cardquestion">
+              <div class="question">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <i class="fa-solid fa-chevron-down fa-lg" style="color: #000000;"></i>
+              </div>
+              <div class="answer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ipsam quibusdam tenetur in ad natus fugiat non aliquam sed fugit!</p>
+              </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="rating">
-        <div class="ratingsize">
-          <h1>Depoimentos</h1>
-        </div>
-      </section>
+    <section class="orcament">
+      <div class="sizeorcament">
+        <h1>Ainda tem dúvidas? Fale comigo pelo Whatsapp<h1>
+        <a class="doubtsbutton" href="#">Tenho dúvidas</a>
+      </div>
+    </section>
 
       <footer>
         <div class="footersize">
