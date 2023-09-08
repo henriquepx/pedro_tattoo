@@ -93,13 +93,37 @@ main h2 {
 /* GALLERY */
 /* GALLERY */
 /* GALLERY */
-
+.containertextintro {
+    margin: 4rem 0rem 5rem 0rem;
+}
+.textintro {
+    font-family: var(--font-arapey);
+    font-size: 1.3rem;
+    color: #1F2021;
+    text-align: center;
+    margin: 5px 0;
+}
+.threepoints {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5rem;
+}
+.threepoints span {
+    width: 6px;
+    height: 6px;
+    background-color: #1F2021;
+    display: block;
+    border-radius: 100%;
+}
 .gallery {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-white-less);
+    background-color: #FFF;
 }
 .gallerysize {
     max-width: 1000px;
@@ -108,20 +132,12 @@ main h2 {
 
     margin: 5rem 0rem;
 }
-.gallerysize h1 {
+.gallerysize .titlegallery {
     text-align: center;
-    font-size: 4rem;
+    font-size: 1.9rem;
     font-family: var(--font-arapey);
     color: var(--color-marrom-1);
     font-weight: 500;
-}
-.gallerysize p {
-    text-align: center;
-    font-size: 1rem;
-    font-family: var(--font);
-    color: var(--color-marrom-1);
-    font-weight: 600;
-    margin-bottom: 2rem;
 }
 .gallerysize .tattoos {
     display: flex;
@@ -129,6 +145,7 @@ main h2 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 3rem;
 }
 .figureinsta {
     display: flex;
@@ -136,10 +153,6 @@ main h2 {
     background-color: var(--color-marrom-2);
     justify-content: center;
     align-items: center;
-}
-.figureinsta .img a {
-    color: white;
-    font-family: var(--font);
 }
 .gallerysize .tattoos figure .img {
     width: 320px;
@@ -193,6 +206,22 @@ main h2 {
 	transform: scale(1.3);
 }
 
+.cardinsta {
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardinsta h1 {
+    text-align: center;
+    font-size: 1.9rem;
+    font-family: var(--font);
+    color: var(--color-marrom-2);
+    font-weight: 500;
+}
 /* ABOUT */
 /* ABOUT */
 /* ABOUT */
@@ -200,6 +229,7 @@ main h2 {
 .about {
     background-color: var(--color-white-less);
     padding: 4rem 0rem;
+    margin-top: 100rem;
 }
 .sizeabout {
     max-width: 1000px;
@@ -401,44 +431,7 @@ main h2 {
 footer {
     background-color: var(--color-marrom-2);
 }
-.footersize {
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
 
-    padding: 2rem;
-
-    display: flex;
-    justify-content: space-between;
-}
-.footernav .footerul {
-    display: flex;
-    flex-direction: column;
-}
-.socialmedias {
-    margin-right: 5rem;
-}
-.socialmedias a {
-    display: flex;
-    gap: 10px;
-    color: var(--color-bege-claro);
-    font-family: var(--font);
-}
-.footercop h1 {
-    color: var(--color-bege-claro);
-    font-family: var(--font);
-    font-weight: 700;
-    font-size: 1.0rem;
-}
-.cop {
-    font-family: var(--font);
-    text-align: center;
-    background-color: #f3e9dc;
-    padding: .5rem 0rem;
-    color: #000000;
-    font-weight: 600;
-    font-size: .8rem;
-}
 
 /* RESPONSIVE 678px */
 /* RESPONSIVE 678px */
@@ -503,8 +496,5 @@ footer {
     .sizeabout h1, .sizeabout p {
         text-align: center;
         padding: 0rem 1rem;
-    }
-    .footersize {
-        flex-direction: column;
     }
 }
