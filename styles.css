@@ -30,12 +30,13 @@
 header {
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-white-less);
+    background-color: #7a5449;
     padding: 1.5rem 10rem;
 }
 header h1 {
     font-family: var(--font);
     font-weight: 600;
+    color: var(--color-bege);
 }
 nav {
     display: flex;
@@ -47,7 +48,7 @@ nav ul {
 }
 nav ul li a {
     font-family: var(--font);
-    color: var(--color-marrom-2);
+    color: var(--color-bege);
     font-weight: 600;
 }
 
@@ -178,18 +179,21 @@ main h2 {
     padding: 2rem 1.5rem;
 }
 .pedroimg {
-    background-image: url('./img/bgtattoo.jpg'); 
-    width: 100%;
+background-image: url('./img/bgtattoo.jpg'); 
+width: 100%;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.portfoliogallerycontainer {
-    display: flex;
-    flex-wrap: wrap;
-}
+@media (max-width: 768px) {
+    .pedidopedro,
+    .pedidopedro2 {
+      grid-template-columns: 1fr;
+      height: 85vh;
+    }
+  }
 
 /* GALLERY */
 /* GALLERY */
@@ -298,7 +302,13 @@ main h2 {
     color: var(--color-marrom-2);
     font-weight: 500;
 }
-
+.cardinsta p {
+    text-align: center;
+    font-size: .9rem;
+    font-family: var(--font);
+    color: var(--color-marrom-2);
+    font-weight: 500;
+}
 
 /* DOUBTS */
 /* DOUBTS */
@@ -452,6 +462,15 @@ footer {
     font-family: var(--font);
     color: var(--color-bege-claro);
     font-size: .9rem;
+}
+
+@media (max-width: 1060px) {
+    .sectionsfooter {   
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
 }
 
 
