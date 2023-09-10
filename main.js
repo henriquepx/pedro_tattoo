@@ -1,11 +1,15 @@
-const question = document.querySelectorAll(".cardquestion .question");
+const questions = document.querySelectorAll(".cardquestion .question");
+const plusSigns = document.querySelectorAll(".plus");
 
 function activeAccordion() {
   this.classList.toggle('active');
   this.nextElementSibling.classList.toggle('active');
+
+  const plusSign = this.querySelector(".plus");
+  plusSign.textContent = plusSign.textContent === "+" ? "-" : "+";
 }
 
-question.forEach((item) => {
+questions.forEach((item) => {
   item.addEventListener('click', activeAccordion);
 });
 

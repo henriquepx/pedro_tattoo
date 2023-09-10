@@ -315,7 +315,8 @@ main h2 {
 /* DOUBTS */
 
 .doubts {
-    background-color: var(--color-white-less);
+    background-color: #f1f1f1;
+    padding-bottom: 5rem;
 }
 .doubtssize {
     max-width: 1000px;
@@ -386,6 +387,71 @@ main h2 {
     margin-top: .6rem;
 }
 
+.arrow-icon.closed {
+    transform: rotate(0deg); 
+    transition: .4s;
+}
+  
+  .arrow-icon.open {
+    transform: rotate(180deg); 
+    transition: .4s;
+}
+.buytattoo {
+    height: 60vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('./img/bgtat.jpg'); 
+    width: 100%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 70% center;
+}
+.sizeorcament {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sizeorcament .titlesize {
+    font-size: 3rem;
+    font-family: var(--font);
+    color: #fff;
+    font-weight: 550;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+.sizeorcament .psize {
+    font-size: 1rem;
+    font-family: var(--font);
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.sizeorcament .buttontotattoo  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 1rem 1.5rem;
+    background-color: var(--color-marrom-1e5);
+    font-family: var(--font);
+    color: #000000;
+    border-radius: 5px;
+    width: 300px;
+}
+.sizeorcament .buttontotattoo  p {
+    font-family: var(--font);
+    font-weight: 600;
+}
+.sizeorcament .buttontotattoo img {
+    width: 30%;
+}
+
 /* FOOTER */
 /* FOOTER */
 /* FOOTER */
@@ -450,7 +516,6 @@ footer {
     color: var(--color-bege-claro);
     font-size: .9rem;
 }
-
 .cop {
     background-color: #000000;
     text-align: center;
@@ -459,64 +524,6 @@ footer {
     padding: .3rem;
     font-size: .3rem;
 }
-.sizeorcament {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.sizeorcament .titlesize {
-    font-size: 1.2rem;
-    font-family: var(--font);
-    color: #fff;
-    font-weight: 550;
-    text-align: center;
-    margin-bottom: .5rem;
-}
-.sizeorcament .psize {
-    font-size: 1rem;
-    font-family: var(--font);
-    font-weight: 400;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-.sizeorcament .buttontotattoo  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    padding: 1rem 1.5rem;
-    background-color: var(--color-marrom-1e5);
-    font-family: var(--font);
-    color: #000000;
-    border-radius: 5px;
-    width: 300px;
-}
-.sizeorcament .buttontotattoo  p {
-    font-family: var(--font);
-    font-weight: 600;
-}
-.sizeorcament .buttontotattoo img {
-    width: 30%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .cop a {
     font-family: var(--font);
     color: #fff;
@@ -647,5 +654,8 @@ footer {
     }
     .sizeorcament {
         margin-bottom: 3rem;
+    }
+    .sizeorcament .titlesize h1 {
+        font-size: 1rem;
     }
 }
