@@ -253,78 +253,6 @@ main h2 {
     margin: 10px 0;
 }
 
-/* RATING */
-/* RATING */
-/* RATING */
-
-.rating {
-    background-color: var(--color-white-less);
-}
-.ratingsize {
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
-
-    padding: 10rem 0;
-}
-.ratingsize h1 {
-    font-size: 1.2rem;
-    font-family: var(--font);
-    font-weight: 550;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-.indicadores {
-    display: flex;
-    justify-content: center;
-}
-.jstabmenu {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    margin: 10px;
-    cursor: pointer;
-    display: block;
-    background-color: #0c0c0c;
-}
-.tabcontent {
-    display: none;
-    padding: 3rem 0rem;
-}
-.tabcontent.ativo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    animation: animationText .6s forwards;
-}
-.textdepoiment {
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 1rem 0rem;
-    padding: 0rem 1.5rem;
-}
-.textdepoiment h2 {
-    margin-top: 15px;
-    font-family: var(--font);
-    font-size: 1rem;
-    font-style: italic;
-}
-.textdepoiment p {
-    font-family: var(--font-arapey);
-}
-  
-@keyframes animationText {
-    from {
-        transform: translate3d(-30px, 0, 0);
-        opacity: 0;
-    }
-    to {
-        transform: translate3d(0, 0, 0);
-        opacity: 1;
-    }
-}
-
 /* DOUBTS */
 /* DOUBTS */
 /* DOUBTS */
@@ -429,7 +357,69 @@ main h2 {
 /* FOOTER */
 
 footer {
-    background-color: var(--color-marrom-2);
+    background-color: #343435;
+    padding: 5rem 5rem 0rem 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sectionsfooter {   
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+.linkfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0rem;
+}
+.linkfooter p {
+    font-family: var(--font);
+    color: var(--color-marrom-1e5);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.linkfooter a {
+    background-color: #e9e8e8;
+    padding: 1.1rem 2rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-family: var(--font);
+    color: var(--color-marrom-2);
+}
+.divfooter {
+    display: flex;
+    flex-direction: column;
+}
+.divfooter h2 {
+    font-family: var(--font);
+    color: var(--color-marrom-1e5);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.divfooter p {
+    font-family: var(--font);
+    color: var(--color-bege-claro);
+    font-size: .9rem;
+}
+
+
+.cop {
+    background-color: #000000;
+    text-align: center;
+    font-family: var(--font);
+    color: #fff;
+    padding: .3rem;
+    font-size: .3rem;
+}
+.cop a {
+    font-family: var(--font);
+    color: #fff;
+    font-size: .3rem;
 }
 
 
