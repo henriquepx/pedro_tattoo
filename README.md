@@ -38,10 +38,6 @@ Para clonar e executar este projeto localmente, siga estas etapas:
 
 4. Explore o site e verifique os recursos disponíveis, como a galeria de fotos e os links para contato.
 
-## Licença
-
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
-
 ---
 
-Feito com ❤️ por Pedro Rodrigues - [Site Pessoal](https://www.site-do-pedro-tatuador.com)
+Feito com ❤️ para Pedro Rodrigues - [Site Pessoal](https://www.site-do-pedro-tatuador.com)
