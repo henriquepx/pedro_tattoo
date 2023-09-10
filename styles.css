@@ -203,7 +203,6 @@ main h2 {
     background-color: #FFF;
 }
 .gallerysize {
-    max-width: 1000px;
 	width: 100%;
 	margin: 0 auto;
 
@@ -232,7 +231,7 @@ main h2 {
     align-items: center;
 }
 .gallerysize .tattoos figure .img {
-    width: 320px;
+    width: 500px;
 
     display: flex;
     flex-direction: column;
@@ -242,7 +241,7 @@ main h2 {
 .gallerysize .tattoos figure {
     overflow: hidden;
     aspect-ratio: 1;
-    max-width: 320px;
+    max-width: 500px;
 }
 @media (max-width: 980px) {
     .gallerysize .tattoos figure {
