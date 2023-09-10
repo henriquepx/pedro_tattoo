@@ -120,12 +120,11 @@ main h2 {
     display: block;
     border-radius: 100%;
 }
-
-.pedidopedro {
+.pedidopedro, .pedidopedro2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     position: relative;
 }
 .pedidopedro .portfoliopedro,
@@ -171,10 +170,26 @@ main h2 {
     margin-top: 1rem;
     color: #d6d6d6;
   }
+.aboutme {
+    background-color: #7a5449;
+    font-family: "Montserrat", sans-serif, monospace;
+    color: #fff;
+    font-size: 1rem;
+    padding: 2rem 1.5rem;
+}
+.pedroimg {
+    background-image: url('./img/bgtattoo.jpg'); 
+    width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-
-
-
+.portfoliogallerycontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* GALLERY */
 /* GALLERY */
@@ -200,7 +215,6 @@ main h2 {
     font-family: var(--font-arapey);
     color: var(--color-marrom-1);
     font-weight: 500;
-    margin-top: 100rem;
 }
 .gallerysize .tattoos {
     display: flex;
@@ -285,36 +299,7 @@ main h2 {
     color: var(--color-marrom-2);
     font-weight: 500;
 }
-/* ABOUT */
-/* ABOUT */
-/* ABOUT */
 
-.about {
-    background-color: var(--color-white-less);
-    padding: 4rem 0rem;
-    margin-top: 100rem;
-}
-.sizeabout {
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-
-    display: flex;
-    gap: 30px;
-}
-.sizeabout img {
-    max-width: 400px;
-}
-.sizeabout h1 {
-    font-size: 2rem;
-    font-family: var(--font);
-    color: var(--color-marrom-1);
-    font-weight: 700;
-}
-.sizeabout p {
-    max-width: 100ch;
-    margin: 10px 0;
-}
 
 /* DOUBTS */
 /* DOUBTS */
