@@ -76,7 +76,7 @@ main {
     align-items: center;
 
     height: 80vh;
-    background-color: var(--color-marrom-1);
+    background-color: #7a5449;
 }
 
 main h1 {
@@ -90,9 +90,11 @@ main h2 {
     font-size: 1.2rem;
 }
 
-/* GALLERY */
-/* GALLERY */
-/* GALLERY */
+
+/* INTRODUCTION */
+/* INTRODUCTION */
+/* INTRODUCTION */
+
 .containertextintro {
     margin: 4rem 0rem 5rem 0rem;
 }
@@ -118,6 +120,66 @@ main h2 {
     display: block;
     border-radius: 100%;
 }
+
+.pedidopedro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+.pedidopedro .portfoliopedro,
+.pedidopedro .tattoosautorais {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.pedidopedro .portfoliopedro {
+    background-image: url('./img/bgportf.jpg'); 
+  }
+  .pedidopedro .tattoosautorais {
+    background-image: url('./img/bgautorais.jpg'); 
+  }
+  .pedidopedro a {
+    color: white; 
+    font-size: 5rem; 
+    text-align: center;
+    z-index: 1;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    font-family: "Montserrat", sans-serif, monospace;
+    box-shadow: inset 0 0 0 0 #d4d4d4;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    &:hover {
+      box-shadow: inset 400px 0 0 0 #ffffff;
+      color: #7a5449;
+    }
+  }
+  .pedidopedro .portfoliopedro p,
+  .pedidopedro .tattoosautorais p {
+    font-family: var(--font-arapey);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #d6d6d6;
+  }
+
+
+
+
+
+/* GALLERY */
+/* GALLERY */
+/* GALLERY */
+
 .gallery {
     display: flex;
     flex-direction: column;
@@ -138,6 +200,7 @@ main h2 {
     font-family: var(--font-arapey);
     color: var(--color-marrom-1);
     font-weight: 500;
+    margin-top: 100rem;
 }
 .gallerysize .tattoos {
     display: flex;
@@ -357,7 +420,7 @@ main h2 {
 /* FOOTER */
 
 footer {
-    background-color: #343435;
+    background-color: #7a5449;
     padding: 5rem 5rem 0rem 5rem;
 
     display: flex;
