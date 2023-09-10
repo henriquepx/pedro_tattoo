@@ -432,7 +432,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 6rem 0rem;
+    padding: 3rem 0rem;
 }
 .linkfooter p {
     font-family: var(--font);
@@ -464,14 +464,7 @@ footer {
     font-size: .9rem;
 }
 
-@media (max-width: 1060px) {
-    .sectionsfooter {   
-        width: 80%;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 40px;
-    }
-}
+
 
 
 .cop {
@@ -487,7 +480,25 @@ footer {
     color: #fff;
     font-size: .3rem;
 }
+/* RESPONSIVE 1060px */
+/* RESPONSIVE 1060px */
+/* RESPONSIVE 1060px */
 
+@media (max-width: 1060px) {
+    .sectionsfooter {   
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .divfooter {
+        justify-content: center;
+        align-items: center;
+    }
+    .divfooter a {
+        text-align: center;
+    }
+}
 
 /* RESPONSIVE 678px */
 /* RESPONSIVE 678px */
@@ -552,5 +563,43 @@ footer {
     .sizeabout h1, .sizeabout p {
         text-align: center;
         padding: 0rem 1rem;
+    }
+}
+
+/* RESPONSIVE 450px */
+/* RESPONSIVE 450px */
+/* RESPONSIVE 450px */
+
+@media (max-width: 450px) {
+    main h1 {
+    font-size: 2rem;
+    }
+    .pedidopedro,
+    .pedidopedro2 {
+      grid-template-columns: 1fr;
+      height: 57vh;
+    }
+    .pedidopedro a {
+    font-size: 3rem; 
+    }
+    .pedroimg {
+        height: 40vh;
+    }
+    .doubtssize .faqtitle   {
+        margin-top: 8em;
+    }
+    .doubtssize .faqtitle p {
+        font-size: 1.6rem;
+        left: 17%;
+        top: 40%;
+    }
+    footer {
+        padding: 2rem 2rem 0rem 2rem;
+    }
+    .linkfooter p {
+        text-align: center;
+    }
+    .linkfooter a {
+        padding: 1rem 1.5rem;
     }
 }
