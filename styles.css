@@ -23,24 +23,29 @@
     text-decoration: none;
 }
 
-/* HEADER */
-/* HEADER */
-/* HEADER */
-
 header {
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-marrom-2);
-    padding: 1.5rem 10rem;
+    align-items: center;
+    padding: 1.5rem;
+    position: absolute;
+    top: 0;
+    width: 60%;
 }
-header h1 {
+.maquinatattoo {
+    width: 50px;
+}
+header .logo {
     font-family: var(--font);
     font-weight: 600;
     color: var(--color-bege);
+    font-size: 1.5rem;
+    padding: 0rem 2rem;
 }
 nav {
     display: flex;
     align-items: center;
+    padding-left: 6rem;
 }
 nav ul {
     display: flex;
@@ -66,18 +71,18 @@ nav ul li a {
     background-color: rgb(255, 255, 255);
 }
 
-/* MAIN */
-/* MAIN */
-/* MAIN */
-
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    height: 80vh;
-    background-color: var(--color-marrom-2);
+    height: 95vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+    background-image: url('./img/spacetattooc.jpg'); 
 }
 
 main h1 {
@@ -557,6 +562,7 @@ footer {
 @media (max-width: 678px) {
     header {
         padding: 1.5rem 2rem;
+        width: 100%;
     }
     .menu {
         position: fixed;
@@ -587,7 +593,7 @@ footer {
       }
       .hamburger.active {
         position: fixed;
-        right: 15px;
+        right: 30px;
       }
       .hamburger.active .bar:nth-child(2) {
         opacity: 0;
