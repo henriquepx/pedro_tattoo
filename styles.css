@@ -3,7 +3,7 @@
     --color-white-less: #fdf5f5;
     --color-bege-claro: #f3e9dc;
     --color-marrom-1: #895737;
-    --color-marrom-2: #5e3023;
+    --color-marrom-2: rgb(94, 48, 35);
     --color-marrom-1e5: #c08552;
     --font: 'Montserrat', sans-serif;
     --font-two: 'Cormorant Garamond', serif;
@@ -82,7 +82,7 @@ main {
     background-repeat: no-repeat;
     background-position: right;
     position: relative;
-    background-image: url('./img/spacetattooc.jpg'); 
+    background-image: url('./img/bgmain3.jpg'); 
 }
 
 main h1 {
@@ -147,10 +147,10 @@ main h2 {
   align-items: center;
 }
 .pedidopedro .portfoliopedro {
-    background-image: url('./img/bgportf.jpg'); 
+    background-image: url('./img/bgport2.jpg'); 
   }
   .pedidopedro .tattoosautorais {
-    background-image: url('./img/bgautorais.jpg'); 
+    background-image: url('./img/bgautorais2.jpg'); 
   }
   .pedidopedro a {
     color: white; 
@@ -199,6 +199,10 @@ main h2 {
       height: 85vh;
     }
   }
+
+
+
+
 
 /* GALLERY */
 /* GALLERY */
@@ -391,16 +395,6 @@ main h2 {
     color: #000;
     margin-top: .6rem;
 }
-
-.arrow-icon.closed {
-    transform: rotate(0deg); 
-    transition: .4s;
-}
-  
-  .arrow-icon.open {
-    transform: rotate(180deg); 
-    transition: .4s;
-}
 .buytattoo {
     height: 60vh;
 
@@ -408,7 +402,7 @@ main h2 {
     justify-content: center;
     align-items: center;
 
-    background-image: url('./img/bgtat.jpg'); 
+    background-image: url('./img/bgtat2.jpg'); 
     width: 100%;
 
     background-size: cover;
@@ -421,13 +415,19 @@ main h2 {
     justify-content: center;
     align-items: center;
 }
+.sizeorcament .maqtattoo {
+    width: 10%;
+    margin-bottom: 1rem;
+}
 .sizeorcament .titlesize {
     font-size: 3rem;
     font-family: var(--font);
     color: #fff;
     font-weight: 550;
     text-align: center;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
 }
 .sizeorcament .psize {
     font-size: 1rem;
@@ -438,16 +438,13 @@ main h2 {
     margin-bottom: 2rem;
 }
 .sizeorcament .buttontotattoo  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    padding: 1rem 1.5rem;
+    padding: 1rem 4rem;
     background-color: var(--color-marrom-1e5);
     font-family: var(--font);
-    color: #000000;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
     border-radius: 5px;
-    width: 300px;
 }
 .sizeorcament .buttontotattoo  p {
     font-family: var(--font);
@@ -522,60 +519,6 @@ footer {
     font-size: .9rem;
 }
 
-
-
-
-.Btn {
-    border: none;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-duration: .4s;
-    cursor: pointer;
-    position: relative;
-    background: #f09433;
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-    overflow: hidden;
-  }
-  
-  .svgIcon {
-    transition-duration: .3s;
-  }
-  
-  .svgIcon path {
-    fill: white;
-  }
-  
-  .text {
-    position: absolute;
-    color: rgb(255, 255, 255);
-    width: 120px;
-    font-weight: 600;
-    opacity: 0;
-    transition-duration: .4s;
-  }
-  
-  .Btn:hover {
-    width: 110px;
-    transition-duration: .4s;
-    border-radius: 30px;
-  }
-  
-  .Btn:hover .text {
-    opacity: 1;
-    transition-duration: .4s;
-  }
-  
-  .Btn:hover .svgIcon {
-    opacity: 0;
-    transition-duration: .3s;
-  }
 
 
 
