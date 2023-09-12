@@ -24,16 +24,20 @@
 }
 
 header {
+    background-color: var(--color-marrom-1);
+}
+header .headersize {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
-    position: absolute;
-    top: 0;
-    width: 60%;
+    padding: .7rem;
 }
 .maquinatattoo {
-    width: 50px;
+    width: 30px;
 }
 header .logo {
     font-family: var(--font);
@@ -45,7 +49,6 @@ header .logo {
 nav {
     display: flex;
     align-items: center;
-    padding-left: 6rem;
 }
 nav ul {
     display: flex;
@@ -82,8 +85,9 @@ main {
     background-repeat: no-repeat;
     background-position: right;
     position: relative;
-    background-image: url('./img/bgmain3.jpg'); 
+    background-image: url(/img/bgmaintattoo.jpg);
 }
+
 
 main h1 {
     font-family: var(--font);
@@ -429,6 +433,15 @@ main h2 {
     text-transform: uppercase;
     border-bottom: 1px solid #fff;
 }
+@media (max-width: 600px) {
+    .sizeorcament .titlesize {
+        border: 0;
+        font-size: 2rem;
+    }
+    .sizeorcament .psize {
+        padding: 1rem;
+    }
+}
 .sizeorcament .psize {
     font-size: 1rem;
     font-family: var(--font);
@@ -568,7 +581,7 @@ footer {
 
 @media (max-width: 678px) {
     header {
-        padding: 1.5rem 2rem;
+        padding: 0rem 2rem;
         width: 100%;
     }
     .menu {
@@ -585,6 +598,9 @@ footer {
         text-align: center;
         transition: 0.3s;
     }
+    .instanav {
+        display: none;
+    }
     .item {
         margin: 25px 0;
     }
@@ -600,7 +616,7 @@ footer {
       }
       .hamburger.active {
         position: fixed;
-        right: 30px;
+        right: 40px;
       }
       .hamburger.active .bar:nth-child(2) {
         opacity: 0;
@@ -665,10 +681,18 @@ footer {
     .linkfooter a {
         padding: 1rem 1.5rem;
     }
+    .buytattoo {
+        height: 100vh;
+        padding-top: 5rem;
+    }
     .sizeorcament {
-        margin-bottom: 3rem;
+        padding: 3rem 0rem;
     }
     .sizeorcament .titlesize h1 {
         font-size: 1rem;
+    }
+    .sizeorcament .titlesize {
+        border: 0;
+        font-size: 2rem;
     }
 }
