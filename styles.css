@@ -85,19 +85,40 @@ main {
     background-repeat: no-repeat;
     background-position: right;
     position: relative;
-    background-image: url(/img/bgmaintattoo.jpg);
+    background-image: url(/img/bgdesfoque.jpg);
 }
-
-
-main h1 {
+.textmain {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+}
+.textmain h1 {
+    font-size: 7rem;
+    padding: 1rem;
     font-family: var(--font);
     color: var(--color-white-less);
-    font-size: 3rem;
 }
-main h2 {
+@media (max-width: 1024px) {
+    .textmain h1 {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+}
+
+.textmain h2 {
     font-family: var(--font);
     color: var(--color-white-less);
     font-size: 1.2rem;
+}
+.tattophoto {
+    position: relative;
+    z-index: 1;
+    width: 500px;
 }
 
 
@@ -151,7 +172,7 @@ main h2 {
   align-items: center;
 }
 .pedidopedro .portfoliopedro {
-    background-image: url('./img/bgport2.jpg'); 
+    background-image: url('./img/portfoliobg.jpg'); 
   }
   .pedidopedro .tattoosautorais {
     background-image: url('./img/bgautorais2.jpg'); 
@@ -531,15 +552,6 @@ footer {
     color: var(--color-bege-claro);
     font-size: .9rem;
 }
-
-
-
-
-
-
-
-
-
 
 .cop {
     background-color: #000000;
