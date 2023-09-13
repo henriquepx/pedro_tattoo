@@ -31,3 +31,17 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 
 
 
+const texto = "• Tatuagens Autorais •";
+
+let index = 0;
+const textoElement = document.getElementById("texto");
+
+function typeText() {
+    if (index < texto.length) {
+        textoElement.textContent += texto.charAt(index);
+        index++;
+        setTimeout(typeText, 5);
+    }
+}
+
+typeText();
