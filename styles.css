@@ -555,13 +555,13 @@ footer {
     text-align: center;
     font-family: var(--font);
     color: #fff;
-    padding: .3rem;
-    font-size: .3rem;
+    padding: 1rem;
+    font-size: 1rem;
 }
 .cop a {
     font-family: var(--font);
     color: #fff;
-    font-size: .3rem;
+    font-size: 1rem;
 }
 /* RESPONSIVE 1060px */
 /* RESPONSIVE 1060px */
