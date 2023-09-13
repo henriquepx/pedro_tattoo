@@ -226,9 +226,6 @@ main {
   }
 
 
-
-
-
 /* GALLERY */
 /* GALLERY */
 /* GALLERY */
@@ -248,8 +245,8 @@ main {
 }
 .gallerysize .titlegallery {
     text-align: center;
-    font-size: 1.9rem;
-    font-family: var(--font-arapey);
+    font-size: 3rem;
+    font-family: var(--font);
     color: var(--color-marrom-1);
     font-weight: 500;
 }
