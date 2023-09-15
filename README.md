@@ -1,4 +1,19 @@
+<table align="right">
+  <tr>
+    <td>
+      <a href="readme-pt.md">🇧🇷 Português</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="README.md">🇺🇸 English</a>
+    </td>
+  </tr>
+</table>
+
 # Site Pessoal do Tatuador Pedro Rodrigues
+
+![Pedro Logo](./img/logoreadm.png)
 
 Bem-vindo ao repositório do site pessoal do tatuador Pedro Rodrigues! Este projeto tem como objetivo criar uma presença online para Pedro Rodrigues e facilitar o acesso às informações sobre suas tatuagens, bem como a possibilidade de entrar em contato para orçamentos.
 
@@ -40,4 +55,4 @@ Para clonar e executar este projeto localmente, siga estas etapas:
 
 ---
 
-Feito com ❤️ para Pedro Rodrigues - [Site Pessoal](https://www.site-do-pedro-tatuador.com)
+Feito com ❤️ para Pedro Rodrigues - [Site Pessoal](https://pedro-tattoo.vercel.app/)
